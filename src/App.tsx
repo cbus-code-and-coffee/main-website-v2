@@ -1,11 +1,9 @@
-import './App.css'
+import "./App.css";
+import "./pages/Home";
+import Home from "./pages/Home";
 
 function App() {
-  return (
-    <>
-      <h1>Columbus Code & Coffee</h1>
-    </>
-  )
+  return <Home />;
 }
 
-export default App
+export default App;

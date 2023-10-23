@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <>
-      <div className="navbar-wrapper flex flex-row items-center place-content-between h-28 px-7">
+      <div className="navbar-wrapper flex flex-row items-center place-content-between px-7 py-8">
         <div className="navbar-logo">
           <img
             className="rounded-full"

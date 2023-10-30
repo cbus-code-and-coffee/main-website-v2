@@ -8,9 +8,10 @@ const Home = () => {
     <>
       <NavBar />
       <Hero
-        title={'Columbus Code & Coffee'}
-        subtitle={'The software engineering community for devs by devs'}
-        btnText={'Join the Community'}
+        title={"Columbus Code & Coffee"}
+        subtitle={"The software engineering community for devs by devs"}
+        btnText={"Join the Community"}
+        btnHref={"https://www.meetup.com/columbus-code-and-coffee/"}
       />
       <>
         <Card

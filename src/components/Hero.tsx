@@ -1,4 +1,14 @@
-const Hero = (props: { title: string; subtitle: string; btnText: string }) => {
+import buttonColorClasses from "../ui/buttonColorClasses";
+import Button from "./Button";
+
+interface HeroProps {
+  title: string;
+  subtitle: string;
+  btnText: string;
+  btnHref: string;
+}
+
+const Hero = (props: HeroProps) => {
   return (
     <>
       <div className="hero-wrapper flex flex-col justify-center items-center w-screen p-44 bg-gray-300">
@@ -7,7 +17,11 @@ const Hero = (props: { title: string; subtitle: string; btnText: string }) => {
           <h2 className="text-2xl">{props.subtitle}</h2>
         </div>
         <div className="hero-btn-wrapper mt-8">
-          <button>{props.btnText}</button>
+          <Button
+            class={buttonColorClasses.blackTextBtn}
+            label={props.btnText}
+            href={props.btnHref}
+          />
         </div>
       </div>
     </>

@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Card from '../components/Card';
 import Section from '../components/Section';
+import SiteForm from "../components/SiteForm";
 
 const Home = () => {
   return (
@@ -38,6 +39,7 @@ const Home = () => {
           />
         </Section>
       </>
+      <SiteForm title="Get in Touch" subtitle="Please contact us" />
       <Footer />
     </>
   );

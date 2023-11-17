@@ -7,7 +7,7 @@ const Card = (props: {
 }) => {
   return (
     <>
-      <div className='card-wrapper flex flex-col'>
+      <div className='card-wrapper flex'>
         <div className='card-image-wrapper'>
           <img src={props.image} alt={props.imageAlt} />
         </div>

@@ -11,3 +11,21 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+@layer base {
+  button {
+    @apply rounded-full border border-solid border-black py-3 px-8;
+  }
+}
+
+@layer components {
+  .btn-blue-bg {
+    @apply bg-btn-blue text-white;
+  }
+  .btn-blue-text {
+    @apply text-btn-blue border-solid border-btn-blue;
+  }
+  .btn-black-text {
+    @apply text-black;
+  }
+}

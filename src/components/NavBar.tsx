@@ -24,7 +24,7 @@ const NavBar = () => {
               <a href="http://localhost:5173/">Get Involved</a>
             </li>
             <li>
-              <button>Contact</button>
+              <button className="btn-blue-bg">Contact</button>
             </li>
           </ul>
         </div>

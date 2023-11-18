@@ -1,7 +1,5 @@
 import * as Yup from "yup";
 import { withFormik, FormikProps, FormikErrors, Form, Field } from "formik";
-import Button from "./Button";
-import buttonColorClasses from "../ui/buttonColorClasses";
 
 interface FormValues {
   firstName: string;
@@ -79,7 +77,7 @@ const InnerForm = (props: OtherProps & FormikProps<FormValues>) => {
           {touched.message && errors.message && <div>{errors.message}</div>}
         </div>
         <div>
-          <Button label="Submit" href="" class={buttonColorClasses.blueBgBtn} />
+          <button className="btn-blue-bg">Submit</button>
         </div>
       </div>
     </Form>

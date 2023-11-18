@@ -1,12 +1,12 @@
-import buttonColorClasses from "../ui/buttonColorClasses";
-import Button from "./Button";
-
 interface HeroProps {
   title: string;
   subtitle: string;
-  btnText: string;
-  btnHref: string;
+  handleClick: MouseEvent;
 }
+
+let handleClick = () => {
+  window.open("https://www.meetup.com/columbus-code-and-coffee/", "_blank");
+};
 
 const Hero = (props: HeroProps) => {
   return (
@@ -17,11 +17,9 @@ const Hero = (props: HeroProps) => {
           <h2 className="text-2xl">{props.subtitle}</h2>
         </div>
         <div className="hero-btn-wrapper mt-8">
-          <Button
-            class={buttonColorClasses.blackTextBtn}
-            label={props.btnText}
-            href={props.btnHref}
-          />
+          <button onClick={handleClick} className="btn-black-text">
+            Join the Community
+          </button>
         </div>
       </div>
     </>

@@ -4,7 +4,7 @@ interface HeroProps {
   handleClick: MouseEvent;
 }
 
-let handleClick = () => {
+const handleClick = () => {
   window.open("https://www.meetup.com/columbus-code-and-coffee/", "_blank");
 };
 

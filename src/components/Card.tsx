@@ -1,7 +1,7 @@
 const Card = (props: {
-  title: String;
-  pText: String;
-  btnText: String;
+  title: string;
+  pText: string;
+  btnText: string;
   image: string;
   imageAlt: string;
 }) => {

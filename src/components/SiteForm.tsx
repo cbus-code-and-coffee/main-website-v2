@@ -1,5 +1,4 @@
-import * as Yup from "yup";
-import { withFormik, FormikProps, FormikErrors, Form, Field } from "formik";
+import { withFormik, FormikProps, Form, Field } from "formik";
 
 interface FormValues {
   firstName: string;
@@ -15,7 +14,7 @@ interface OtherProps {
 }
 
 const InnerForm = (props: OtherProps & FormikProps<FormValues>) => {
-  const { touched, errors, isSubmitting, title, subtitle } = props;
+  const { touched, errors, title, subtitle } = props;
   return (
     <Form>
       <div className="form-wrapper flex flex-col gap-7 px-6">
@@ -122,7 +121,7 @@ const SiteForm = withFormik<SiteFormProps, FormValues>({
   //   return errors;
   // },
 
-  handleSubmit: (values) => {},
+  handleSubmit: () => {},
 })(InnerForm);
 
 export default SiteForm;

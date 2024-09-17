@@ -1,9 +1,11 @@
 <!-- You can erase any parts of this template not applicable to your Pull Request. -->
 
 ## Rationale
+
 <!-- Explain the reason behind this PR. What drove these changes and what should be the desired outcome when these changes are merged? -->
 
 ## Description
+
 <!--- Describe the specifics of your changes in detail, please add screenshots if there are changes in the UI. -->
 
 ### Checklist
@@ -15,4 +17,3 @@
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass locally with my changes
 - [ ] Any dependent changes have been merged and published in downstream modules
-

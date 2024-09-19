@@ -1,12 +1,11 @@
-export { };
+export {};
 module.exports = {
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/**/*.d.ts',
-    '!**/vendor/**'],
-  coverageDirectory: 'coverage',
-  testEnvironment: 'jsdom',
+  collectCoverageFrom: ["src/**/*.{ts,tsx}", "!src/**/*.d.ts", "!**/vendor/**"],
+  coverageDirectory: "coverage",
+  testEnvironment: "jsdom",
   transform: {
-    ".(ts|tsx)": "ts-jest"
+    ".(ts|tsx)": "ts-jest",
   },
 
   coveragePathIgnorePatterns: [
@@ -16,7 +15,7 @@ module.exports = {
     "package-lock.json",
     "reportWebVitals.ts",
     "setupTests.ts",
-    "index.tsx"
+    "index.tsx",
   ],
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-}
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
+};

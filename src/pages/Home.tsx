@@ -5,6 +5,10 @@ import Card from "../components/Card";
 import Section from "../components/Section";
 import SiteForm from "../components/SiteForm";
 
+const handleClick = () => {
+  window.open("https://www.meetup.com/columbus-code-and-coffee/", "_blank");
+};
+
 const Home = () => {
   return (
     <>
@@ -14,6 +18,7 @@ const Home = () => {
         subtitle={"The software engineering community for devs by devs"}
         btnText={"Join the Community"}
         btnHref={"https://www.meetup.com/columbus-code-and-coffee/"}
+        onClick={handleClick}
       />
       <>
         <Section>

@@ -1,12 +1,10 @@
 interface HeroProps {
   title: string;
   subtitle: string;
-  handleClick: MouseEvent;
+  btnText?: string;
+  btnHref?: string;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
-
-const handleClick = () => {
-  window.open("https://www.meetup.com/columbus-code-and-coffee/", "_blank");
-};
 
 const Hero = (props: HeroProps) => {
   return (
@@ -17,7 +15,11 @@ const Hero = (props: HeroProps) => {
           <h2 className="text-2xl">{props.subtitle}</h2>
         </div>
         <div className="hero-btn-wrapper mt-8">
-          <button onClick={handleClick} className="btn-black-text">
+          <button
+            onClick={props.onClick}
+            className="btn-black-text"
+            data-testid="hero-button"
+          >
             Join the Community
           </button>
         </div>

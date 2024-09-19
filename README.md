@@ -27,6 +27,7 @@ Before pushing your changes, remember to lint your work by running `yarn prettie
 
 - [Typescript](https://www.typescriptlang.org/) - scripting language
 - [Yarn](https://yarnpkg.com/) - package manager
+- [Jest](https://jestjs.io/) - unit test framework
 
 **Frontend Tools**
 

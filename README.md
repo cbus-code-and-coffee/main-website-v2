@@ -19,7 +19,7 @@ Branches are created based on issues defined in the GitHub repo. Branch names sh
 
 Commits follow the ["conventional commits" naming convention](https://www.conventionalcommits.org/en/v1.0.0/) of `category: short description` e.g. `bug: div not centered`. Please use present verb tense when forming your commit message.
 
-Before pushing your changes, remember to lint your work by running `yarn prettier --write .`
+Before pushing your changes, remember to lint your work by running `yarn lint`
 
 ## Technologies Used
 

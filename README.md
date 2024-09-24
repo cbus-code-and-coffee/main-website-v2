@@ -15,6 +15,8 @@ Spin up the frontend with
 
 ## Working on Issues
 
+Design specifications come from [this](https://www.figma.com/design/Mk9tKqHnybGx6klCCuY8g7/Revision%2C-Main-Website-v2?node-id=0-1&t=qYm28o9oRsfN1BCz-1) Figma document. Ping [Noel](mailto:noelcastillon1@gmail.com) if you need access to the file.
+
 Branches are created based on issues defined in the GitHub repo. Branch names should follow the naming convention of `issue-category/issue#/brief-description` e.g., `feat/21/add-footer`
 
 Commits follow the ["conventional commits" naming convention](https://www.conventionalcommits.org/en/v1.0.0/) of `category: short description` e.g. `bug: div not centered`. Please use present verb tense when forming your commit message.

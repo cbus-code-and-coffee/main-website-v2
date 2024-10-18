@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 import Section from "../components/Section";
-import SiteForm from "../components/SiteForm";
+// import SiteForm from "../components/SiteForm";
 
 const handleClick = () => {
   window.open("https://www.meetup.com/columbus-code-and-coffee/", "_blank");
@@ -44,7 +44,7 @@ const Home = () => {
           />
         </Section>
       </>
-      <SiteForm title="Get in Touch" subtitle="Please contact us" />
+      {/* <SiteForm title="Get in Touch" subtitle="Please contact us" /> */}
       <Footer />
     </>
   );

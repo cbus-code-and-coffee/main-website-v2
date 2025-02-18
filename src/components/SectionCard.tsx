@@ -1,4 +1,4 @@
-interface PropsSecionCard {
+interface PropsSectionCard {
   image: string;
   imageStyle: string;
   title: string;
@@ -7,7 +7,7 @@ interface PropsSecionCard {
   btnTitle?: string;
 }
 
-const SectionCard = (props: PropsSecionCard) => {
+const SectionCard = (props: PropsSectionCard) => {
   return (
     <div>
       <div className="flex justify-center p-6">

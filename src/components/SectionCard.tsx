@@ -5,6 +5,7 @@ interface PropsSectionCard {
   blurb: string;
   isButton?: boolean;
   btnTitle?: string;
+  buttonStyle?: string;
 }
 
 const SectionCard = (props: PropsSectionCard) => {
@@ -18,7 +19,11 @@ const SectionCard = (props: PropsSectionCard) => {
       </div>
       <div>
         <p>{props.blurb}</p>
-        {props.isButton ? <button>{props.btnTitle}</button> : null}
+      </div>
+      <div className="flex justify-center py-10">
+        {props.isButton ? (
+          <button className={props.buttonStyle}>{props.btnTitle}</button>
+        ) : null}
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 interface PropsSectionCard {
   image: string;
   imageStyle: string;
-  borderStyle: string;
+  imgWrapperStyle: string;
   title: string;
   blurb: string;
   isButton?: boolean;
@@ -12,7 +12,7 @@ interface PropsSectionCard {
 const SectionCard = (props: PropsSectionCard) => {
   return (
     <div>
-      <div className={props.borderStyle}>
+      <div className={props.imgWrapperStyle}>
         <img className={props.imageStyle} src={props.image} />
       </div>
       <div className="text-center p-1">

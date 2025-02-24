@@ -1,16 +1,18 @@
 interface PropsSectionCard {
   image: string;
   imageStyle: string;
+  imgWrapperStyle: string;
   title: string;
   blurb: string;
   isButton?: boolean;
   btnTitle?: string;
+  btnStyle?: string;
 }
 
 const SectionCard = (props: PropsSectionCard) => {
   return (
     <div>
-      <div className="flex justify-center p-6">
+      <div className={props.imgWrapperStyle}>
         <img className={props.imageStyle} src={props.image} />
       </div>
       <div className="text-center p-1">
@@ -18,7 +20,11 @@ const SectionCard = (props: PropsSectionCard) => {
       </div>
       <div>
         <p>{props.blurb}</p>
-        {props.isButton ? <button>{props.btnTitle}</button> : null}
+      </div>
+      <div className="flex justify-center py-10 ">
+        {props.isButton ? (
+          <button className={props.btnStyle}>{props.btnTitle}</button>
+        ) : null}
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import Section from "../components/Section";
 import WhatToExpect from "../components/WhatToExpect";
 import GetInvolved from "../components/GetInvolved";
+import Form from "../components/Form";
 // import SiteForm from "../components/SiteForm";
 
 const handleClick = () => {
@@ -36,6 +37,7 @@ const Home = () => {
         </Section>
         <WhatToExpect />
         <GetInvolved />
+        <Form />
       </>
       {/* <SiteForm title="Get in Touch" subtitle="Please contact us" /> */}
       <Footer />

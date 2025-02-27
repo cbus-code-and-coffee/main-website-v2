@@ -79,9 +79,8 @@ const Form = () => {
         </div>
         <div className="field-container h-48">
           <label htmlFor="message">Message</label>
-          <input
-            className="formLightBorder block border rounded w-full pl-1 h-full"
-            type="text"
+          <textarea
+            className="formLightBorder block border rounded w-full p-1 h-full text-start"
             {...register("message", { required: "Please enter a message" })}
           />
           <p className="text-red-500">{errors.message?.message}</p>

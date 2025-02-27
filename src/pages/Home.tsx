@@ -6,7 +6,6 @@ import Section from "../components/Section";
 import WhatToExpect from "../components/WhatToExpect";
 import GetInvolved from "../components/GetInvolved";
 import Form from "../components/Form";
-// import SiteForm from "../components/SiteForm";
 
 const handleClick = () => {
   window.open("https://www.meetup.com/columbus-code-and-coffee/", "_blank");

@@ -36,7 +36,7 @@ const Home = () => {
         </Section>
         <WhatToExpect />
         <GetInvolved />
-        <Form onSubmit={(data) => console.log("Form data submitted: ", data)} />
+        <Form onSubmit={(data) => data} />
       </>
       <Footer />
     </>

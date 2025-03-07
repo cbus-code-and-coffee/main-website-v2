@@ -32,7 +32,6 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
       <div>
         <h3 className="text-2xl  p-7 font-bold"> Get In Touch</h3>
         <p className="p-7">
-          {" "}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
           veritatis totam tempore nobis itaque fugit ipsam amet, voluptatem
           pariatur, delectus perspiciatis velit accusamus deleniti! Accusantium,
@@ -53,7 +52,9 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
                 required: "Please enter your first name",
               })}
             />
-            <p className="text-red-500">{errors.firstName?.message}</p>
+            <p className="text-red-500" data-testid="error-name">
+              {errors.firstName?.message}
+            </p>
           </div>
           <div className="w-1/2 flex flex-col gap-3">
             <label htmlFor="lastName">Last Name</label>
@@ -61,9 +62,13 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
               className="formLightBorder block border rounded w-full h-10 pl-1"
               type="text"
               data-testid="last-name"
-              {...register("lastName", { required: "Please enter last name" })}
+              {...register("lastName", {
+                required: "Please enter your last name",
+              })}
             />
-            <p className="text-red-500">{errors.lastName?.message}</p>
+            <p className="text-red-500" data-testid="error-last-name">
+              {errors.lastName?.message}
+            </p>
           </div>
         </div>
 
@@ -76,7 +81,9 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
               data-testid="email"
               {...register("email", { required: "Please enter your email" })}
             />
-            <p className="text-red-500">{errors.email?.message}</p>
+            <p className="text-red-500" data-testid="error-email">
+              {errors.email?.message}
+            </p>
           </div>
           <div className="w-1/2 flex flex-col gap-3">
             <label htmlFor="subject">Subject</label>
@@ -85,10 +92,12 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
               type="text"
               data-testid="subject"
               {...register("subject", {
-                required: "Please enter your subject",
+                required: "Please enter a subject",
               })}
             />
-            <p className="text-red-500">{errors.subject?.message}</p>
+            <p className="text-red-500" data-testid="error-subject">
+              {errors.subject?.message}
+            </p>
           </div>
         </div>
         <div className="field-container h-48">
@@ -98,7 +107,9 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
             data-testid="message"
             {...register("message", { required: "Please enter a message" })}
           />
-          <p className="text-red-500">{errors.message?.message}</p>
+          <p className="text-red-500" data-testid="error-message">
+            {errors.message?.message}
+          </p>
         </div>
         <div className="p-7">
           <button className="btn-blue-bg" type="submit" data-testid="submit">

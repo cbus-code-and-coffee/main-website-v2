@@ -36,9 +36,8 @@ const Home = () => {
         </Section>
         <WhatToExpect />
         <GetInvolved />
-        <Form />
+        <Form onSubmit={(data) => data} />
       </>
-      {/* <SiteForm title="Get in Touch" subtitle="Please contact us" /> */}
       <Footer />
     </>
   );

@@ -111,7 +111,7 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
             {errors.message?.message}
           </p>
         </div>
-        <div className="p-7">
+        <div className="py-7">
           <button className="btn-blue-bg" type="submit" data-testid="submit">
             Submit
           </button>

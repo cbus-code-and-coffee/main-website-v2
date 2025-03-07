@@ -3,8 +3,8 @@ import Form from "../components/Form";
 import { act } from "react";
 import "@testing-library/jest-dom";
 
-describe("form is entered correctly", () => {
-  it("it calls the onSubmit function", async () => {
+describe("form test", () => {
+  it("should submit the form when all fields are valid", async () => {
     const mockOnSubmit = jest.fn();
     render(<Form onSubmit={mockOnSubmit} />);
 
@@ -32,10 +32,8 @@ describe("form is entered correctly", () => {
 
     expect(mockOnSubmit).toHaveBeenCalled();
   });
-});
 
-describe("form is entered incorrectly", () => {
-  it("it calls the onSubmit function", async () => {
+  it("shouldn't submit the form when all fields aren't valid", async () => {
     const mockOnSubmit = jest.fn();
     render(<Form onSubmit={mockOnSubmit} />);
 

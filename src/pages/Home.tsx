@@ -38,17 +38,13 @@ const Home = () => {
         <WhatToExpect />
         <GetInvolved />
         <Sponsor
-          isDarkRoast={true}
-          imageDarkRoast1={"https://dummyimage.com/600x400/eeeeee/fff"}
           isMediumRoast={true}
           imageMediumRoast1={"https://dummyimage.com/600x400/eeeeee/fff"}
-          imageMediumRoast2={"https://dummyimage.com/600x400/eeeeee/fff"}
           isLightRoast={true}
           imageLightRoast1={"https://dummyimage.com/600x400/eeeeee/fff"}
-          isEspressoRoast={true}
-          imageEspressoRoast1={"https://dummyimage.com/600x400/eeeeee/fff"}
+          imageLightRoast2={"https://dummyimage.com/600x400/eeeeee/fff"}
+          imageLightRoast3={"https://dummyimage.com/600x400/eeeeee/fff"}
         />
-
         <Form onSubmit={(data) => data} />
       </>
       <Footer />

@@ -6,7 +6,7 @@ import Section from "../components/Section";
 import WhatToExpect from "../components/WhatToExpect";
 import GetInvolved from "../components/GetInvolved";
 import Form from "../components/Form";
-import Sponsor from "../components/Sponsor";
+import SponsorCard from "../components/SponsorCard";
 
 const handleClick = () => {
   window.open("https://www.meetup.com/columbus-code-and-coffee/", "_blank");
@@ -37,13 +37,19 @@ const Home = () => {
         </Section>
         <WhatToExpect />
         <GetInvolved />
-        <Sponsor
-          isMediumRoast={true}
-          imageMediumRoast1={"https://dummyimage.com/600x400/eeeeee/fff"}
-          isLightRoast={true}
-          imageLightRoast1={"https://dummyimage.com/600x400/eeeeee/fff"}
-          imageLightRoast2={"https://dummyimage.com/600x400/eeeeee/fff"}
-          imageLightRoast3={"https://dummyimage.com/600x400/eeeeee/fff"}
+        <SponsorCard
+          isMainTitle={true}
+          sponsorTier="medium"
+          imageWidth="w-medium-roast"
+          image1={"https://dummyimage.com/600x400/eeeeee/fff"}
+        />
+        <SponsorCard
+          isMainTitle={false}
+          sponsorTier="Light"
+          imageWidth="w-light-roast"
+          image1={"https://dummyimage.com/600x400/eeeeee/fff"}
+          image2={"https://dummyimage.com/600x400/eeeeee/fff"}
+          image3={"https://dummyimage.com/600x400/eeeeee/fff"}
         />
         <Form onSubmit={(data) => data} />
       </>

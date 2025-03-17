@@ -14,6 +14,13 @@ export default {
         formLightBorder: "DADCE0",
         //dark form border
       },
+
+      width: {
+        "dark-roast": "32rem",
+        "medium-roast": "24rem",
+        "light-roast": "16rem",
+        "espresso-roast": "14rem",
+      },
     },
   },
   plugins: [],

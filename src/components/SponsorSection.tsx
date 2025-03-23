@@ -4,8 +4,8 @@ const SponsorSection = () => {
   return (
     <>
       <div className="p-3">
-        <div className="text-2xl text-center">
-          <h4>Sponsors</h4>
+        <div>
+          <h4 className="text-2xl text-center">Sponsors</h4>
         </div>
       </div>
       <SponsorCard

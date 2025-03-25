@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   return (
     <>
@@ -12,16 +14,20 @@ const NavBar = () => {
         <div className="navbar-links">
           <ul className="flex flex-row gap-14">
             <li>
-              <a href="http://localhost:5173/">Home</a>
+              {/* <a href="http://localhost:5173/">Home</a> */}
+              <Link to="/">home</Link>
             </li>
             <li>
-              <a href="http://localhost:5173/">About</a>
+              {/* <a href="http://localhost:5173/">About</a> */}
+              <Link to="/About">About</Link>
             </li>
             <li>
-              <a href="http://localhost:5173/">Community Groups</a>
+              {/* <a href="http://localhost:5173/">Community Groups</a> */}
+              <Link to="/Community Groups">Community Groups</Link>
             </li>
             <li>
-              <a href="http://localhost:5173/">Get Involved</a>
+              {/* <a href="http://localhost:5173/">Get Involved</a> */}
+              <Link to="/GetInvolved">Get Involved</Link>
             </li>
             <li>
               <button className="btn-blue-bg">Contact</button>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   return (
     <>
@@ -12,7 +14,7 @@ const NavBar = () => {
         <div className="navbar-links">
           <ul className="flex flex-row gap-14">
             <li>
-              <a href="http://localhost:5173/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <a href="http://localhost:5173/">About</a>

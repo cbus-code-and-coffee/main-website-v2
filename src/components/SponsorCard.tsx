@@ -16,7 +16,6 @@ const SponsorCard: React.FC<PropsSponsor> = ({
   return (
     <div className="p-2">
       <h4 className="text-center p-3">{sponsorTier} Roast Tier Supporters</h4>
-
       <div className="flex gap-4 justify-center flex-wrap">
         {images.map((source, index) => (
           <img

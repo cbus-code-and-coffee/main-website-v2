@@ -14,20 +14,16 @@ const NavBar = () => {
         <div className="navbar-links">
           <ul className="flex flex-row gap-14">
             <li>
-              {/* <a href="http://localhost:5173/">Home</a> */}
-              <Link to="/">home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              {/* <a href="http://localhost:5173/">About</a> */}
-              <Link to="/About">About</Link>
+              <a href="http://localhost:5173/">About</a>
             </li>
             <li>
-              {/* <a href="http://localhost:5173/">Community Groups</a> */}
-              <Link to="/Community Groups">Community Groups</Link>
+              <a href="http://localhost:5173/">Community Groups</a>
             </li>
             <li>
-              {/* <a href="http://localhost:5173/">Get Involved</a> */}
-              <Link to="/GetInvolved">Get Involved</Link>
+              <a href="http://localhost:5173/">Get Involved</a>
             </li>
             <li>
               <button className="btn-blue-bg">Contact</button>

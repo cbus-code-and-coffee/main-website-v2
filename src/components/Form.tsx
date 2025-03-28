@@ -30,7 +30,7 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
-        <h3 className="text-2xl p-7 font-bold"> Get In Touch</h3>
+        <h3 className="text-4xl p-7">Get In Touch</h3>
         <p className="p-7">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
           veritatis totam tempore nobis itaque fugit ipsam amet, voluptatem

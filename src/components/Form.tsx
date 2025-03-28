@@ -30,7 +30,7 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
-        <h3 className="text-2xl  p-7 font-bold"> Get In Touch</h3>
+        <h3 className="text-4xl p-7">Get In Touch</h3>
         <p className="p-7">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
           veritatis totam tempore nobis itaque fugit ipsam amet, voluptatem
@@ -38,14 +38,12 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
           praesentium. Ex nemo eius qui.
         </p>
       </div>
-      <div className="form-wrapper flex flex-col gap-7 px-6">
-        <div className="form-header flex flex-col gap-3 pb-5"></div>
-
-        <div className="field-container flex gap-8">
-          <div className="w-1/2 flex flex-col gap-3">
+      <div className="px-6">
+        <div className="flex flex-col md:flex-row md:gap-8">
+          <div className="w-full gap-2 md:w-1/2 flex flex-col md:gap-5">
             <label htmlFor="firstName">First Name</label>
             <input
-              className="formLightBorder block border rounded w-full h-10 pl-1"
+              className="block border rounded w-full h-10 pl-1"
               type="text"
               data-testid="name"
               {...register("firstName", {
@@ -56,10 +54,10 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
               {errors.firstName?.message}
             </p>
           </div>
-          <div className="w-1/2 flex flex-col gap-3">
+          <div className="w-full gap-2 md:w-1/2 flex flex-col md:gap-5">
             <label htmlFor="lastName">Last Name</label>
             <input
-              className="formLightBorder block border rounded w-full h-10 pl-1"
+              className="block border rounded w-full h-10 pl-1"
               type="text"
               data-testid="last-name"
               {...register("lastName", {
@@ -72,11 +70,11 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
           </div>
         </div>
 
-        <div className="field-container flex gap-8">
-          <div className="w-1/2 flex flex-col gap-3">
+        <div className="flex flex-col md:flex-row md:gap-8">
+          <div className="w-full gap-2 md:w-1/2 flex flex-col md:gap-5">
             <label htmlFor="email">Email</label>
             <input
-              className="formLightBorder block border rounded w-full h-10 pl-1"
+              className="block border rounded w-full h-10 pl-1"
               type="email"
               data-testid="email"
               {...register("email", { required: "Please enter your email" })}
@@ -85,10 +83,10 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
               {errors.email?.message}
             </p>
           </div>
-          <div className="w-1/2 flex flex-col gap-3">
+          <div className="gap-2 w-full md:w-1/2 flex flex-col md:gap-5">
             <label htmlFor="subject">Subject</label>
             <input
-              className="formLightBorder block border rounded w-full h-10 pl-1"
+              className="block border rounded w-full h-10 pl-1"
               type="text"
               data-testid="subject"
               {...register("subject", {
@@ -100,10 +98,12 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
             </p>
           </div>
         </div>
-        <div className="field-container h-48">
-          <label htmlFor="message">Message</label>
+        <div className="py-5 gap-2 flex flex-col md:gap-5 md:h-48">
+          <label className="" htmlFor="message">
+            Message
+          </label>
           <textarea
-            className="formLightBorder block border rounded w-full p-1 h-full text-start"
+            className="block border rounded w-full p-1 h-full text-start"
             data-testid="message"
             {...register("message", { required: "Please enter a message" })}
           />
@@ -111,7 +111,7 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
             {errors.message?.message}
           </p>
         </div>
-        <div className="py-7">
+        <div className="py-4 md:py-10">
           <button className="btn-blue-bg" type="submit" data-testid="submit">
             Submit
           </button>

@@ -1,17 +1,17 @@
 const Footer = () => {
   return (
     <>
-      <div className="footer-wrapper flex flex-col justify-center items-center align-center gap-10 py-20 bg-gray-100">
-        <div className="footer-img">
+      <div className="flex flex-col justify-center px-4 gap-10 py-20 bg-gray-100">
+        <div className="grid place-items-center">
           <img
             className="rounded-full"
             src="http://placekitten.com/100/100"
             alt="logo of Columbus Code & Coffee"
           />
         </div>
-        <div className="footer-nav">
+        <div>
           <nav>
-            <ul className="flex flex-row gap-7">
+            <ul className="flex flex-col md:flex-row justify-center gap-7">
               <li>
                 <a href="http://localhost:5173/">Home</a>
               </li>
@@ -30,8 +30,8 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div className="footer-socials">
-          <nav>
+        <div>
+          <nav className="grid place-items-center">
             <ul className="flex flex-row gap-3">
               <li>
                 <a href="http://localhost:5173/">Meetup</a>
@@ -48,7 +48,7 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div className="footer-info flex flex-col justify-center align-center items-center gap-2">
+        <div className="md:font-normal text-sm flex flex-col justify-center text-center items-center gap-2">
           <p>© 2023 Columbus Code & Coffee. All rights reserved.</p>
           <p>NPO Tax ID: XX-XXXXXX</p>
         </div>

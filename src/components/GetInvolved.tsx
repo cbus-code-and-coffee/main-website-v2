@@ -2,7 +2,7 @@ import SectionCard from "./SectionCard";
 
 const GetInvolved = () => {
   return (
-    <div className="p-5 bg-gray-100">
+    <div id="get-involved" className="p-5 bg-gray-100">
       <h3 className="text-2xl text-center p-7 font-bold "> Get Involved</h3>
       <div className="flex gap-4">
         <SectionCard

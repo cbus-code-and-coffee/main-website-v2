@@ -2,8 +2,8 @@ interface PropsSectionCard {
   image: string;
   imageStyle: string;
   imgWrapperStyle: string;
-  title: string;
-  blurb: string;
+  title?: string;
+  blurb?: string;
   isButton?: boolean;
   btnTitle?: string;
   btnStyle?: string;

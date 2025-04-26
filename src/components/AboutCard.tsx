@@ -3,7 +3,9 @@ const AboutCard = (props: {
   subTitle: string;
   pText: string;
   image: string;
-  // this boolean reverses the blurb and image so that I can reuse the same component twice
+  // this boolean reverses the blurb and image so the component can be reused
+  isButton: Boolean;
+  btnText?: string;
   isNotReversed: boolean;
 }) => {
   return (
@@ -31,6 +33,11 @@ const AboutCard = (props: {
             <div className="p-3">
               <h3 className="text-2xl py-2">{props.subTitle}</h3>
               <p className="text-base ">{props.pText}</p>
+              {props.isButton && (
+                <div className="card-btn-wrapper mt-8">
+                  <button className="btn-blue-bg">{props.btnText}</button>
+                </div>
+              )}
             </div>
           </div>
         </div>

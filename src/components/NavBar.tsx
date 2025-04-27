@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   return (
@@ -13,17 +13,23 @@ const NavBar = () => {
         </div>
         <div className="navbar-links">
           <ul className="flex flex-row gap-14">
-            <li>
-              <Link to="/">Home</Link>
+            <li className="cursor-pointer">
+              <Link to="home" smooth={true} duration={500}>
+                Home
+              </Link>
             </li>
-            <li>
-              <a href="http://localhost:5173/">About</a>
+            <li className="cursor-pointer">
+              <Link to="about" smooth={true} duration={500}>
+                About
+              </Link>
             </li>
             <li>
               <a href="http://localhost:5173/">Community Groups</a>
             </li>
-            <li>
-              <a href="http://localhost:5173/">Get Involved</a>
+            <li className="cursor-pointer">
+              <Link to="get-involved" smooth={true} duration={500}>
+                Get Involved
+              </Link>
             </li>
             <li>
               <button className="btn-blue-bg">Contact</button>

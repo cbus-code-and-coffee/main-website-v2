@@ -4,7 +4,7 @@ const AboutCard = (props: {
   pText: string;
   image: string;
   // this boolean reverses the blurb and image so the component can be reused
-  isButton: Boolean;
+  isButton: boolean;
   btnText?: string;
   isNotReversed: boolean;
 }) => {

@@ -27,7 +27,7 @@ const Home = () => {
       <>
         <Section>
           <AboutCard
-            isNotReversed={false}
+            isReversed={false}
             image={"https://dummyimage.com/600x400/eeeeee/fff"}
             subTitle={"Our Story"}
             pText={

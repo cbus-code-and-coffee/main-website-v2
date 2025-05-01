@@ -8,21 +8,23 @@ const About = () => {
     <>
       <NavBar />
       <AboutCard
-        isNotReversed={true}
+        isReversed={true}
         title={"About Us"}
         image={"https://dummyimage.com/600x400/eeeeee/fff"}
         subTitle={"Our Mission"}
         pText={
           "Lorem ipsum demo demoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         }
+        isButton={false}
       />
       <AboutCard
-        isNotReversed={false}
+        isReversed={false}
         image={"https://dummyimage.com/600x400/eeeeee/fff"}
         subTitle={"Our Story"}
         pText={
           "Lorem ipsum demo demoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         }
+        isButton={false}
       />
 
       <div className="p-5">

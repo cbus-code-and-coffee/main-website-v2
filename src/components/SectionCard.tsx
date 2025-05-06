@@ -21,7 +21,7 @@ const SectionCard = (props: PropsSectionCard) => {
       <div>
         <p>{props.blurb}</p>
       </div>
-      <div className="flex justify-center py-10 ">
+      <div className="flex justify-center py-10">
         {props.isButton ? (
           <button className={props.btnStyle}>{props.btnTitle}</button>
         ) : null}

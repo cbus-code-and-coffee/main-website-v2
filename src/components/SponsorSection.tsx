@@ -20,6 +20,7 @@ const SponsorSection = () => {
           "https://dummyimage.com/600x400/eeeeee/fff",
           "https://dummyimage.com/600x400/eeeeee/fff",
           "https://dummyimage.com/600x400/eeeeee/fff",
+          "https://dummyimage.com/600x400/eeeeee/fff",
         ]}
       />
     </>

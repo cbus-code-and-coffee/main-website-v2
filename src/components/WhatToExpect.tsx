@@ -38,12 +38,12 @@ const WhatToExpect = () => {
     <div className="p-5">
       <h3 className="text-2xl text-center p-7 font-bold"> What To Expect</h3>
       <div className="flex gap-4 md:hidden">
-        <button className="align-middle border-none" onClick={setPrevious}>
+        <button className="border-none p-0" onClick={setPrevious}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="24px"
+            height="42px"
             viewBox="0 -960 960 960"
-            width="24px"
+            width="42px"
             fill="#1f1f1f"
           >
             <path d="M560-280 360-480l200-200v400Z" />
@@ -57,12 +57,12 @@ const WhatToExpect = () => {
           blurb={cards[index].blurb}
           isButton={false}
         />
-        <button className="align-middle border-none" onClick={setNext}>
+        <button className="border-none p-0" onClick={setNext}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="24px"
+            height="42px"
             viewBox="0 -960 960 960"
-            width="24px"
+            width="42px"
             fill="#1f1f1f"
           >
             <path d="M400-280v-400l200 200-200 200Z" />

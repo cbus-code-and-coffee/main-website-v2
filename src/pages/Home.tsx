@@ -1,7 +1,6 @@
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import Card from "../components/Card";
 import Section from "../components/Section";
 import WhatToExpect from "../components/WhatToExpect";
 import GetInvolved from "../components/GetInvolved";

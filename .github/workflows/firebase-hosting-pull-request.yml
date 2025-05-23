@@ -20,5 +20,4 @@ jobs:
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEBSITE_V2_A1515 }}
-          channelId: live
           projectId: website-v2-a1515

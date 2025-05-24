@@ -1,22 +1,18 @@
+import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-
-interface FormValues {
-  firstName: string;
-  lastName: string;
-  email: string;
-  subject: string;
-  message: string;
-}
+import { FormValues } from "../types";
+import { submitContactForm } from "../util/addSubmission";
 
 interface FormProps {
   onSubmit: SubmitHandler<FormValues>;
 }
 
-const Form: React.FC<FormProps> = ({ onSubmit }) => {
+const Form: React.FC<FormProps> = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<FormValues>({
     defaultValues: {
       firstName: "",
@@ -26,6 +22,11 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
       message: "",
     },
   });
+
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    await submitContactForm(data);
+    reset();
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>

@@ -39,7 +39,7 @@ const Home = () => {
         <WhatToExpect />
         <GetInvolved />
         <SponsorSection />
-        <Form onSubmit={(data) => data} />
+        <Form />
       </>
       <Footer />
     </>

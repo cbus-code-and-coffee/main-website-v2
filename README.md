@@ -23,6 +23,8 @@ Commits follow the ["conventional commits" naming convention](https://www.conven
 
 Before pushing your changes, remember to lint your work by running `yarn lint`
 
+If you're making changes that require access to the db, you'll need to make a copy of `example.env`, rename it to `.env`, and you'll need to change the value to the correct firebase API key. Reach out to Noel if this is necessary for your PR.
+
 ## Technologies Used
 
 **General Tools**

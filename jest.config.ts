@@ -7,6 +7,12 @@ module.exports = {
   transform: {
     ".(ts|tsx)": "ts-jest",
   },
+  globals: {
+    "ts-jest": {
+      babelConfig: true,
+      useESM: true,
+    },
+  },
 
   coveragePathIgnorePatterns: [
     "/node_modules/",

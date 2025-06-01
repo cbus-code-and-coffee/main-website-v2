@@ -9,6 +9,10 @@ import "@testing-library/jest-dom";
 import { submitContactForm } from "../util/addSubmission";
 
 describe("form test", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
   it("should submit the form when all fields are valid", async () => {
     render(<Form />);
 
@@ -62,7 +66,7 @@ describe("form test", () => {
       fireEvent.click(screen.getByRole("button", { name: /submit/i }));
     });
 
-    expect(submitContactForm).toHaveBeenCalled();
+    expect(submitContactForm).not.toHaveBeenCalled();
 
     expect(screen.getByTestId("error-name")).toHaveTextContent(
       "Please enter your first name",

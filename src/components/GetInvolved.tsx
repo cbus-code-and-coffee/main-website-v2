@@ -38,7 +38,7 @@ const GetInvolved = () => {
   return (
     <div id="get-involved" className="p-5 bg-gray-100">
       <h3 className="text-2xl text-center p-7 font-bold "> Get Involved</h3>
-      <div className="flex gap-4 md:hidden">
+      <div className="flex gap-4 lg:hidden">
         <button className="border-none p-0" onClick={setPrevious}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ const GetInvolved = () => {
       </div>
 
       <div id="get-involved" className="p-5 bg-gray-100">
-        <div className="hidden md:flex gap-4">
+        <div className="hidden lg:flex gap-4">
           {cards.map((card) => (
             <SectionCard
               key={card.id}

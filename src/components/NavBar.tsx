@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const NavBar = () => {
   const [dropDownMenu, setDropDownMenu] = useState(false);

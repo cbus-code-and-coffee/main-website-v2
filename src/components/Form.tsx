@@ -24,7 +24,7 @@ const Form: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form id="contact" onSubmit={handleSubmit(onSubmit)}>
       <div>
         <h3 className="text-4xl p-7">Get In Touch</h3>
         <p className="p-7">

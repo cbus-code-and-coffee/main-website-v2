@@ -40,16 +40,7 @@ interface SubmissionData {
 export const onSubmission = onDocumentCreated(
   "submissions/{docID}",
   async (event) => {
-    //delete
-    console.log("⚡ onSubmission TRIGGERED");
-
     const snapshot = event.data;
-
-    //delete
-    if (!snapshot) {
-      console.log("❌ No snapshot data found");
-      return null;
-    }
 
     //to get the fields from the data
     const data = snapshot?.data() as SubmissionData;

@@ -30,6 +30,11 @@ jobs:
         with:
           cmd: install # will run `yarn install` command
 
+      - name: Install missing ESLint plugins
+        run: |
+          cd functions
+          yarn add eslint-plugin-import --dev
+
       - name: Run linters
         uses: wearerequired/lint-action@v2
         with:

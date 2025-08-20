@@ -1,11 +1,7 @@
 import * as admin from "firebase-admin";
-
 import * as nodemailer from "nodemailer";
-
 import * as path from "path";
-
 import * as dotenv from "dotenv";
-
 import { onDocumentCreated } from "firebase-functions/firestore";
 
 dotenv.config({ path: path.resolve(__dirname, ".env") });
@@ -19,7 +15,7 @@ const appPassword = process.env.PASSWORD;
 // test email that will receive forms after they are created in firebase
 const testEmail = "yenterefe@gmail.com";
 
-//Email transporter with GMAIL SDK
+// Email transporter with GMAIL SDK
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -36,13 +32,11 @@ interface SubmissionData {
   message?: string;
 }
 
-//when document is created and sent to firebase, this will be exported to firestore
 export const onSubmission = onDocumentCreated(
   "submissions/{docID}",
   async (event) => {
     const snapshot = event.data;
-
-    //to get the fields from the data
+    // to get the fields from the data
     const data = snapshot?.data() as SubmissionData;
 
     const firstName = (data.firstName ?? "").toString();
@@ -51,17 +45,19 @@ export const onSubmission = onDocumentCreated(
     const subject = (data.subject ?? "").toString();
     const message = (data.message ?? "").toString();
 
-    const testEmailSubject = `New contact submission from ${firstName || "Unknown"}`;
+    const testEmailSubject =
+      "<h2>New contact submission</h2>" +
+      `<p><b>First Name:</b> ${firstName || "Unknown"}</p>`;
 
-    const submittedFormHtml = `   
+    const submittedFormHtml = `
       <h2>New form submission</h2>
       <p><b>First Name:</b> ${firstName}</p>
       <p><b>Last Name:</b> ${lastName}</p>
       <p><b>Email:</b> ${email}</p>
       <p><b>Subject:</b> ${subject}</p>
       <p><b>Message:</b><br/>${message.replace(/\n/g, "<br/>")}</p>
-      <hr/><small>Doc ID: ${event.params.docID}</small>`;
-
+      <hr/><small>Doc ID: ${event.params.docID}</small>
+    `;
     try {
       await transporter.sendMail({
         from: cbusGmail,
@@ -77,7 +73,8 @@ export const onSubmission = onDocumentCreated(
           subject: `Hi ${firstName}, your message was successfully submitted.`,
           text:
             `${firstName ? " " + firstName : ""},\n\n` +
-            "Thank you for contacting Columbus Code and Coffee. We’ll be in touch with you shortly.\n\n Admin",
+            "Thank you for contacting Columbus Code and Coffee. " +
+            "We’ll be in touch with you shortly.\n\n Admin",
         });
       }
 

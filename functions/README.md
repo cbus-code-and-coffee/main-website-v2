@@ -103,24 +103,25 @@ firebase emulators:start
 
 Submit a form on the frontend → check:
 
-* Firestore for new submission.
-* Gmail inboxes for notification + auto-reply emails.
+- Firestore for new submission.
+- Gmail inboxes for notification + auto-reply emails.
 
 ---
 
 ## ✅ Summary
 
-* Frontend → writes submissions to Firestore (`submissions` collection).
-* Backend → Cloud Function (`onSubmission`) listens for new docs and sends:
+- Frontend → writes submissions to Firestore (`submissions` collection).
+- Backend → Cloud Function (`onSubmission`) listens for new docs and sends:
 
-  * Email notification to the site owner.
-  * Auto-reply email to the sender.
-* `.env` (in `lib/`) stores Gmail credentials securely.
+  - Email notification to the site owner.
+  - Auto-reply email to the sender.
+
+- `.env` (in `lib/`) stores Gmail credentials securely.
 
 ---
 
 This README ensures any developer joining the project can:
 
-* Set up Firebase Functions locally.
-* Configure Gmail credentials.
-* Run and test backend email functionality.
+- Set up Firebase Functions locally.
+- Configure Gmail credentials.
+- Run and test backend email functionality.

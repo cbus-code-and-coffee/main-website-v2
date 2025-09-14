@@ -2,9 +2,9 @@ import * as admin from "firebase-admin";
 import * as nodemailer from "nodemailer";
 import * as path from "path";
 import * as dotenv from "dotenv";
-import { onDocumentCreated } from "firebase-functions/firestore";
+import {onDocumentCreated} from "firebase-functions/firestore";
 
-dotenv.config({ path: path.resolve(__dirname, ".env") });
+dotenv.config({path: path.resolve(__dirname, ".env")});
 
 admin.initializeApp();
 

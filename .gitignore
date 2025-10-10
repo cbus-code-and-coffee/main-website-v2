@@ -25,3 +25,8 @@ dist-ssr
 *.sw?
 
 /coverage
+
+# Ignore .env files
+.env
+functions/.env
+functions/src/.env
